@@ -1,0 +1,11 @@
+Value Required PORT (\d+)
+Value LINK (Up|Down)
+Value SPEED (\S+)
+Value DUPLEX (\S+)
+Value MEDIA (\S+((?!\s{6,}).)+)
+Value NAME (.+[^ +])
+
+
+Start
+  ^Port
+  ^${PORT}\s+${LINK}\s+${SPEED}\s+${DUPLEX}\s+${MEDIA}\s+${NAME}  -> Record

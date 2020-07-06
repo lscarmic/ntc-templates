@@ -1,0 +1,12 @@
+Value NAME (\S+)
+Value LEVEL (\S+)
+Value LATCH (\S+)
+Value TRAP (\S+)
+Value LOG (\S+)
+Value LED_RELAY (\S+)
+Value REFRESH_TIME (\S+)
+
+
+Start
+  ^Name 
+  ^${NAME}\s+${LEVEL}\s+${LATCH}\s+${TRAP}\s+${LOG}\s+${LED_RELAY}\s+${REFRESH_TIME} -> Record

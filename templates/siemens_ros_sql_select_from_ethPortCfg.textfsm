@@ -1,0 +1,14 @@
+Value PORT (\S+)
+Value NAME (\S+(?: \S+)*)
+Value IF_NAME (\S+)
+Value MEDIA (\S+)
+Value STATE (\S+)
+Value AUTO_N (\S+)
+Value SPEED (\S+)
+Value DUPLEX (\S+)
+
+
+
+Start
+  ^Port
+  ^${PORT}\s+${NAME}\s+${IF_NAME}\s+${MEDIA}\s+${STATE}\s+${AUTO_N}\s+${SPEED}\s+${DUPLEX} -> Record
